@@ -25,8 +25,10 @@ async def on_message(message):
     to_send = mush.send_message(message)
     await message.channel.send(to_send)
 
+
 def push_to_main(message:str):
     for guild in bot.guilds:
         guild.get_channel(1269444451684843563).send(message)
 
-bot.run("MTI2OTQzODcyO" + "DE2NjcwMzIwOQ.Gik2VD." + "dy_DqSsC0_v9c" + "iHvKUFnj2iO31kEVmivKH0x2Y")
+
+bot.run(open('handle.txt', 'r').read())
